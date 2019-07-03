@@ -1,7 +1,8 @@
 
-![alt text](https://i.imgur.com/jMNyorX.png "Omega Network Logo")
-# OMEGA NETWORK
-Omega coin is a powerful masternode-based PoW cryptocurrency.
+![alt text](http://45.76.137.248/files/OMEGA256x256.png "Omega Network Logo")
+# OmegaBlockchain -  Social Network Reinvented.
+
+http://omegablockchain.net/
 
 #
 
@@ -24,5 +25,19 @@ wget https://github.com/RottenCoin/omegacoin/raw/master/omega_setup.sh
 chmod 755 omega_setup.sh
 
 ./omega_setup.sh
+
+# Omega Sentinel quick installation:
+
+wget https://raw.githubusercontent.com/rottencoin/sentinel/master/sentinel-one-line-installer.sh
+
+chmod +x sentinel-one-line-installer.sh
+
+./sentinel-one-line-installer.sh
+
+to test if is working properly:
+
+cd sentinel
+
+./venv/bin/py.test ./test
 
 ***
