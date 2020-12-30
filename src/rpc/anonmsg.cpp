@@ -17,6 +17,7 @@
 
 UniValue sendanonmsg(const UniValue& params, bool fHelp)
 {
+    LOCK(cs_main);
     std::string strMsg(params[0].get_str());
     if (strMsg.empty()) {
         return "failed: message empty";
