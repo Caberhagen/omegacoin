@@ -18,7 +18,7 @@
 UniValue sendanonmsg(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1)
-        throw runtime_error(
+        throw std::runtime_error(
             "sendanonmsg \"message\"\n"
             "\nArguments:\n"
             "1. \"message\"    (string, required) The message you want to send \"\".\n"
