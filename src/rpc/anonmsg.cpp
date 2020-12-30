@@ -17,7 +17,6 @@
 
 UniValue sendanonmsg(const UniValue& params, bool fHelp)
 {
-    LOCK(cs_main);
     std::string strMsg(params[0].get_str());
     int num(params[1].get_int());
     if (strMsg.empty()) {
