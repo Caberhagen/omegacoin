@@ -17,6 +17,16 @@
 
 UniValue sendanonmsg(const UniValue& params, bool fHelp)
 {
+    if (fHelp || params.size() < 1)
+        throw runtime_error(
+            "sendanonmsg \"message\"\n"
+            "\nArguments:\n"
+            "1. \"message\"    (string, required) The message you want to send \"\".\n"
+            + HelpExampleCli("sendanonmsg", "\"hi\"") +
+            "\nAs a json rpc call\n"
+            + HelpExampleRpc("sendanonmsg", "\"hi\"")
+        );
+
     std::string strMsg(params[0].get_str());
     if (strMsg.empty()) {
         return "failed: message empty";
